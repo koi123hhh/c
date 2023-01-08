@@ -27,7 +27,7 @@
 //	return 0;
 //}
 //2.计算n的阶乘的和,该写法算出来是错误的.
-int main()
+/*int main()
 {
 	int i = 0;
 	int n = 0;
@@ -37,7 +37,7 @@ int main()
 	//i的起始值,判断,循环
 	for (n = 1; n <= 3; n++)
 	{
-		ret = 1;
+		//ret = 1;
 		//正确的修改过程在此处将ret初始化ret=1;使每次ret进入循环时都是从一开始的
 		for (i = 1; i <= n; i++)
 		{
@@ -53,6 +53,24 @@ int main()
 	//第四次进入ret=12
 	//出来.......
 	printf("sum=%d\n", sum);
+	return 0;
+}*/
+//写一个代码在arr数组中找到数字7
+int main()
+{
+	int arr[] = { 1, 2, 3, 4, 5, 6, };
+	int k = 7;
+	int i = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	for (i = 0; i < sz; i++)
+	{
+		if (k == arr[i])
+		{
+			printf("找到了,下标为:%d\n", i);
+		}
+	}
+	if (i == sz);
+	printf("没找到");
 	return 0;
 }
 
